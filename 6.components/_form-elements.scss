@@ -1,0 +1,70 @@
+input, textarea, select {
+    border: 1px solid $black;
+    height: inherit;
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-family: 'proxima-nova';
+}
+
+select, input {
+    height: 50px;
+}
+
+textarea {
+    height: 300px;
+    line-height: 25px;
+}
+
+label {
+    padding-bottom: 10px;
+    display: block;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.gform_button {
+    &.button {
+        width: auto;
+        padding: 0px 40px;
+        font-size: 15px;
+        font-weight: bold;
+        color: $white;
+        background: $colour-font;
+        text-transform: uppercase;
+        font-family: 'proxima-nova';
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: $colour-primary;
+            border-color: $colour-primary;
+        }
+    }
+}
+
+.ginput_recaptcha {
+    display: inline-block !important;
+    float: left;
+}
+
+.gfield {
+    position: relative;
+}
+
+.validation_error {
+    margin-bottom: 20px;
+}
+
+.gfield_error {
+    input {
+        border: 1px solid red;
+    }
+}
+
+select {
+    &.disabled {
+        opacity: 0.3;
+    }
+}

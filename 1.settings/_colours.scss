@@ -1,0 +1,59 @@
+// http://chir.ag/projects/name-that-color/
+
+// Core colours
+$white: #ffffff;
+$black: #000000;
+$charcoal: #414042;
+$grey: #8e8e8e;
+
+// Greys
+$gallery: #eeeeee;
+
+// Theme Colours
+$forest-green: #3aae2a;
+$pink: #5b108b;
+$purple: #ae2a71;
+$palm-green: #0d270a;
+
+$verdino-blue: #014289;
+
+// Variables
+$colour-primary: $forest-green;
+$colour-accent: $pink;
+$colour-secondary: $purple;
+
+//Variables darkened
+$colour-primary-darkened: darken($colour-primary, 10%);
+$colour-accent-darkened: darken($colour-accent, 10%);
+$colour-secondary-darkened: darken($colour-secondary, 10%);
+
+$colour-background: $white;
+$colour-inner-background: $gallery;
+
+$colour-font: $palm-green;
+
+$theme-colours: (
+	white: $white,
+	black: $black,
+	grey: $grey,
+	charcoal: $charcoal,
+	colour-primary: $colour-primary,
+	colour-accent: $colour-accent,
+	colour-secondary: $colour-secondary,
+	colour-primary-darkened: $colour-primary-darkened,
+	colour-accent-darkened: $colour-accent-darkened,
+	colour-secondary-darkened: $colour-secondary-darkened,
+	colour-background: $colour-background,
+	colour-inner-background: $colour-inner-background,
+	colour-font: $colour-font,
+	forest-green: $forest-green,
+	pink: $pink,
+	gallery: $gallery,
+	palm-green: $palm-green,
+	verdino-blue: $verdino-blue
+);
+
+//social site colours
+$twitter-blue: #55ACEE;
+$facebook-blue: #39619F;
+$google-red: #F33F2C;
