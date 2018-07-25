@@ -1,6 +1,6 @@
 # Flavour CSS
 
-Flavour is a utility, dekstop first scss library made and maintained [@thinkingjuice](https://thinkingjuice.co.uk). The idea is that it is utility first and grew from a natural movement towards using small classes to control simple styles allowing us to iterate on feedback quickly without any unwanted side effects.
+Flavour is a utility, dekstop first scss library made and maintained [@friendsthatcode](https://www.friendsthatcode.co.uk). The idea is that it is utility first and grew from a natural movement towards using small classes to control simple styles allowing us to iterate on feedback quickly without any unwanted side effects.
 
 Heavy inspiration has been taken from [ITCSS](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/) and [tailwindcss](https://tailwindcss.com/)
 
