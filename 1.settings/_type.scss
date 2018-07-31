@@ -25,7 +25,8 @@ a {
 
 // Based on http://typecast.com/blog/a-more-modern-scale-for-web-typography
 h1,
-.h1 {
+.h1,
+.h1 p {
 	font-size: 3em;
 	line-height: 1.05em;
 	font-family: $header-font-family;
@@ -34,7 +35,8 @@ h1,
 }
 
 h2,
-.h2 {
+.h2,
+.h2 p {
     font-size: 2.25em;
 	line-height: 1.25em;
 	font-family: $header-font-family;
@@ -43,7 +45,8 @@ h2,
 }
 
 h3,
-.h3 {
+.h3,
+.h3 p {
     font-size: 1.75em;
 	line-height: 1.25em;
 	font-family: $header-font-family;
@@ -52,7 +55,8 @@ h3,
 }
 
 h4,
-.h4 {
+.h4,
+.h4 p {
     font-size: 1.5em;
 	line-height: 1.45em;
 	font-family: $header-font-family;

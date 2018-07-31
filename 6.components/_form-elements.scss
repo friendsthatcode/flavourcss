@@ -68,3 +68,48 @@ select {
         opacity: 0.3;
     }
 }
+
+.form-wrap {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 5px 10px !important;
+        width: 100%;
+        outline: none;
+        transition: all 0.2s ease;
+        &:focus {
+            border-left: $colour-primary solid 5px;
+        }
+    }
+
+    .input-half {
+        width: 49%;
+        display: inline-block;
+    }
+
+    .space-right {
+        margin-right: 1.5%;
+    }
+
+    .gform_button {
+        float: right;
+    }
+
+    .gform_validation_container {
+        display: none;
+    }
+
+}
+@media screen and (max-width: $medium) {
+    .form-wrap {
+        .input-half {
+            width: 100%;
+        }
+    }
+}
+
+.gform_ajax_spinner {
+    max-width: 30px;
+}

@@ -52,7 +52,6 @@
 @import '5.objects/backgrounds';
 @import '5.objects/borders';
 @import '5.objects/flex';
-@import '5.objects/icons';
 
 /*
 * 6.Components
@@ -61,17 +60,17 @@
 */
 @import '6.components/form-elements';
 @import '6.components/buttons';
-@import '6.components/pods';
 @import '6.components/videos';
-@import '6.components/tabs';
-@import '6.components/tables';
+@import '6.components/lists';
+@import '6.components/wysiwyg';
 
 /*
 * 7.Theme
 * =========================
 * Use this for pretty specific styles.
 */
-@import '7.theme/{partial_name}';
+@import '7.theme/theme';
+@import '7.theme/blazy';
 
 /*
 * 8.Trumps

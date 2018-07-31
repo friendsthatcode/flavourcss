@@ -1,0 +1,55 @@
+// Incredibly useful for WYSIWYG editors, be it TimyMCE or not, the below saves loads of formatting time!
+.wysiwyg {
+	font-weight: 300;
+	text-align: left;
+
+	p {
+		padding-bottom: 40px;
+
+		a {
+			color: $colour-primary;
+			word-wrap: break-word;
+		}
+	}
+
+	img {
+		width: auto;
+	}
+
+	ul {
+
+	margin: 10px 0 20px 0;
+
+		li {
+			list-style: disc;
+			list-style-position: inside;
+		}
+	}
+
+	ol {
+
+	margin: 10px 0 20px 0;
+
+		li {
+			list-style: decimal;
+			list-style-position: inside;
+		}
+	}
+}
+
+.text-block {
+	p {
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: $medium) {
+	.wysiwyg {
+		img {
+			padding: 20px 0;
+		}
+		p {
+			padding-bottom: 20px;
+		}
+	}
+}

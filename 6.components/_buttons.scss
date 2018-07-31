@@ -1,1 +1,15 @@
-
+.button {
+	text-transform: uppercase;
+	font-weight: bold;
+	border-width: 2px;
+	color: $white;
+	background: $colour-primary;
+	padding: 6px 12px;
+	letter-spacing: 1px;
+	display: inline-block;
+	transition: all 0.3s ease;
+	&:hover {
+		color: $black;
+		background: $colour-secondary;
+	}
+}
