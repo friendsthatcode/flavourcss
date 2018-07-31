@@ -5,5 +5,57 @@
 
 $base-font-family: 'Helvetica', sans-serif;
 $header-font-family: 'Helvetica', sans-serif;
+$base-font-colour: $colour-font;
 $base-line-height: 1.5;
 $base-font-size: 16px;
+
+p,
+a,
+li,
+blockquote,
+form,span {
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+// Based on http://typecast.com/blog/a-more-modern-scale-for-web-typography
+h1,
+.h1 {
+	font-size: 3em;
+	line-height: 1.05em;
+	font-family: $header-font-family;
+    color: $base-font-colour;
+    font-weight: 500;
+}
+
+h2,
+.h2 {
+    font-size: 2.25em;
+	line-height: 1.25em;
+	font-family: $header-font-family;
+    color: $base-font-colour;
+    font-weight: 500;
+}
+
+h3,
+.h3 {
+    font-size: 1.75em;
+	line-height: 1.25em;
+	font-family: $header-font-family;
+    color: $base-font-colour;
+    font-weight: 500;
+}
+
+h4,
+.h4 {
+    font-size: 1.5em;
+	line-height: 1.45em;
+	font-family: $header-font-family;
+    color: $base-font-colour;
+    font-weight: 500;
+}

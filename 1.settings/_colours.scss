@@ -1,25 +1,18 @@
-// http://chir.ag/projects/name-that-color/
-
-// Core colours
+// Core colours (used on every site)
 $white: #ffffff;
 $black: #000000;
-$charcoal: #414042;
 $grey: #8e8e8e;
+$charcoal: #414042;
+$gallery: #f0f0f0;
 
-// Greys
-$gallery: #eeeeee;
-
-// Theme Colours
-$forest-green: #3aae2a;
-$pink: #5b108b;
+// Theme Colours (http://chir.ag/projects/name-that-color/)
+$emerald: #1A936F;
+$eggshell: #F3E9D2;
 $purple: #ae2a71;
-$palm-green: #0d270a;
 
-$verdino-blue: #014289;
-
-// Variables
-$colour-primary: $forest-green;
-$colour-accent: $pink;
+// Variables (we store in variables so that they can be easily replaced)
+$colour-primary: $emerald;
+$colour-accent: $eggshell;
 $colour-secondary: $purple;
 
 //Variables darkened
@@ -27,30 +20,23 @@ $colour-primary-darkened: darken($colour-primary, 10%);
 $colour-accent-darkened: darken($colour-accent, 10%);
 $colour-secondary-darkened: darken($colour-secondary, 10%);
 
-$colour-background: $white;
-$colour-inner-background: $gallery;
-
-$colour-font: $palm-green;
+$colour-font: $black;
 
 $theme-colours: (
 	white: $white,
 	black: $black,
 	grey: $grey,
 	charcoal: $charcoal,
+	gallery: $gallery,
 	colour-primary: $colour-primary,
 	colour-accent: $colour-accent,
 	colour-secondary: $colour-secondary,
 	colour-primary-darkened: $colour-primary-darkened,
 	colour-accent-darkened: $colour-accent-darkened,
 	colour-secondary-darkened: $colour-secondary-darkened,
-	colour-background: $colour-background,
-	colour-inner-background: $colour-inner-background,
 	colour-font: $colour-font,
-	forest-green: $forest-green,
-	pink: $pink,
-	gallery: $gallery,
-	palm-green: $palm-green,
-	verdino-blue: $verdino-blue
+	emerald: $emerald,
+	eggshell: $eggshell
 );
 
 //social site colours

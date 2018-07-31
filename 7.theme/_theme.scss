@@ -1,0 +1,50 @@
+a {
+    transition: all 0.3s ease;
+    &:hover {
+        color: $colour-primary;
+    }
+}
+
+pre {
+    background-color: $gallery;
+    padding: 20px;
+    margin-bottom: 5px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+code {
+    font-family: Courier, 'New Courier', monospace;
+    color: $colour-secondary;
+    span {
+        &.o {
+            color: #d78518;
+        }
+        &.g {
+            color: $colour-primary;
+        }
+        &.d {
+            color: #6d7881;
+        }
+    }
+}
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: $white;
+    z-index: 10;
+}
+
+.section {
+    padding: 20px 0;
+    .container {
+        border-bottom: $gallery 1px solid;
+    }
+}
+
+.bullet-list {
+    list-style: disc;
+    li {
+        margin-left: 40px;
+    }
+}
