@@ -51,27 +51,35 @@
 .sixteen-six {
   @include aspect-ratio(16, 6);
 }
+.h-100 {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
 
 @each $prefix, $size in $screens {
     @media screen and (max-width: $size) {
         .#{$prefix}\:float-left {
             float: left;
         }
-
         .#{$prefix}\:float-right {
             float: right;
         }
-
         .#{$prefix}\:float-none {
             float: none;
         }
-
         .#{$prefix}\:relative {
             position: relative;
         }
-
         .#{$prefix}\:absolute {
             position: absolute;
+        }
+        .#{$prefix}\:h-100 {
+            height: 100%;
+        }
+        .#{$prefix}\:w-100 {
+            width: 100%;
         }
     }
 }

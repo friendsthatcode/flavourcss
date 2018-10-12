@@ -23,3 +23,16 @@ input {
 	border: none;
 	border-radius: 0;
 }
+
+//Everything should be border box because it's great!
+html {
+    box-sizing: border-box;
+}
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}

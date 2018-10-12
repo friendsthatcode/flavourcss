@@ -3,17 +3,11 @@ $white: #ffffff;
 $black: #000000;
 $grey: #8e8e8e;
 $charcoal: #414042;
-$gallery: #f0f0f0;
-
-// Theme Colours (http://chir.ag/projects/name-that-color/)
-$emerald: #1A936F;
-$eggshell: #F3E9D2;
-$purple: #ae2a71;
 
 // Variables (we store in variables so that they can be easily replaced)
-$colour-primary: $emerald;
-$colour-accent: $eggshell;
-$colour-secondary: $purple;
+$colour-primary: $charcoal;
+$colour-accent: $black;
+$colour-secondary: $grey;
 
 //Variables darkened
 $colour-primary-darkened: darken($colour-primary, 10%);
@@ -27,16 +21,13 @@ $theme-colours: (
 	black: $black,
 	grey: $grey,
 	charcoal: $charcoal,
-	gallery: $gallery,
 	colour-primary: $colour-primary,
 	colour-accent: $colour-accent,
 	colour-secondary: $colour-secondary,
 	colour-primary-darkened: $colour-primary-darkened,
 	colour-accent-darkened: $colour-accent-darkened,
 	colour-secondary-darkened: $colour-secondary-darkened,
-	colour-font: $colour-font,
-	emerald: $emerald,
-	eggshell: $eggshell
+	colour-font: $colour-font
 );
 
 //social site colours

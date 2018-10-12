@@ -24,7 +24,6 @@
 */
 @import '3.generic/normalize';
 @import '3.generic/reset';
-@import '3.generic/box-sizing';
 
 /*
 * 4.Base
@@ -60,7 +59,6 @@
 */
 @import '6.components/form-elements';
 @import '6.components/buttons';
-@import '6.components/videos';
 @import '6.components/lists';
 @import '6.components/wysiwyg';
 
@@ -69,8 +67,9 @@
 * =========================
 * Use this for pretty specific styles.
 */
+@import '7.theme/aos';
+@import '7.theme/slick';
 @import '7.theme/theme';
-@import '7.theme/blazy';
 
 /*
 * 8.Trumps

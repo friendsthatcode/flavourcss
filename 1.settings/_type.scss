@@ -63,3 +63,13 @@ h4,
     color: $base-font-colour;
     font-weight: 500;
 }
+
+h5,
+.h5,
+.h5 p {
+    font-size: 1.2em;
+    line-height: 1.15em;
+    font-family: $header-font-family;
+    color: $base-font-colour;
+    font-weight: 500;
+}

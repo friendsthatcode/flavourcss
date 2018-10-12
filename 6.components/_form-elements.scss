@@ -1,74 +1,3 @@
-input, textarea, select {
-    border: 1px solid $black;
-    height: inherit;
-    background-color: transparent;
-    margin-bottom: 20px;
-    font-family: 'proxima-nova';
-}
-
-select, input {
-    height: 50px;
-}
-
-textarea {
-    height: 300px;
-    line-height: 25px;
-}
-
-label {
-    padding-bottom: 10px;
-    display: block;
-}
-
-textarea {
-    resize: none;
-    width: 100%;
-    padding-left: 10px;
-}
-
-.gform_button {
-    &.button {
-        width: auto;
-        padding: 0px 40px;
-        font-size: 15px;
-        font-weight: bold;
-        color: $white;
-        background: $colour-font;
-        text-transform: uppercase;
-        font-family: 'proxima-nova';
-        transition: all 0.3s ease;
-        &:hover {
-            background-color: $colour-primary;
-            border-color: $colour-primary;
-        }
-    }
-}
-
-.ginput_recaptcha {
-    display: inline-block !important;
-    float: left;
-}
-
-.gfield {
-    position: relative;
-}
-
-.validation_error {
-    margin-bottom: 20px;
-}
-
-.gfield_error {
-    input {
-        border: 1px solid red;
-    }
-}
-
-select {
-    &.disabled {
-        opacity: 0.3;
-    }
-}
-
 .form-wrap {
     input[type="text"],
     input[type="email"],
@@ -77,39 +6,122 @@ select {
         -moz-appearance: none;
         padding: 5px 10px !important;
         width: 100%;
+        margin-bottom: 20px;
         outline: none;
+        height: inherit;
+        border: 1px solid $black;
         transition: all 0.2s ease;
         &:focus {
             border-left: $colour-primary solid 5px;
         }
     }
-
-    .input-half {
-        width: 49%;
+    textarea {
+        resize: none;
+        min-height: 300px;
+        width: 100%;
+    }
+    select {
+        height: inherit;
+        border-radius: 5px;
+        padding: 0 2rem;
+        background-color: $charcoal;
+        // You might want to change the icon here
+        background-image: url('https://image.flaticon.com/icons/svg/32/32195.svg');
+        background-position: right 2rem center;
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        font-weight: 500;
+        transition: border 0.25s ease-in-out;
+        &.disabled {
+            opacity: 0.3;
+        }
+    }
+    label {
+        padding-bottom: 10px;
+        display: block;
+    }
+    // fake checkbox that is used on ALL sites now... :)
+    .checkbox-actual {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        opacity: 0;
+        
+        &:checked ~ .fake-checkbox,
+        &:checked ~ .fake-radio {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+    .fake-checkbox {
+        width: 3.6rem;
+        height: 3.6rem;
+        border: 2px solid $charcoal;
+        background-color: $white;
+        border-radius: 5px;
         display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: border 0.25s ease-in-out;
+     
+        &::after {
+            content: " ";
+            display: inline-block;
+            width: 2.7rem;
+            height: 2.7rem;
+            position: absolute;
+            top: 0.3rem;
+            left: 0.3rem;
+            // You might want to change the icon here
+            background-image: url('https://image.flaticon.com/icons/svg/64/64484.svg');
+            background-position: center;
+            background-size: 80%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 0.1s ease-in-out;
+        }
     }
-
-    .space-right {
-        margin-right: 1.5%;
-    }
-
+    // Gravity forms specific, but very much a core of the form-wrap toolset
     .gform_button {
         float: right;
     }
-
     .gform_validation_container {
         display: none;
     }
-
-}
-@media screen and (max-width: $medium) {
-    .form-wrap {
-        .input-half {
-            width: 100%;
+    .gform_ajax_spinner {
+        max-width: 30px;
+    }
+    .gform_button {
+        &.button {
+            width: auto;
+            padding: 0px 40px;
+            font-size: 15px;
+            font-weight: bold;
+            color: $white;
+            background: $colour-font;
+            text-transform: uppercase;
+            font-family: 'proxima-nova';
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: $colour-primary;
+                border-color: $colour-primary;
+            }
         }
     }
-}
-
-.gform_ajax_spinner {
-    max-width: 30px;
+    .ginput_recaptcha {
+        display: inline-block !important;
+        float: left;
+    }
+    .gfield {
+        position: relative;
+    }
+    .validation_error {
+        margin-bottom: 20px;
+    }
+    .gfield_error {
+        input {
+            border: 1px solid red;
+        }
+    }
 }

@@ -14,14 +14,6 @@
     display: block;
 }
 
-.flex {
-    display: flex;
-}
-
-.inline-flex {
-    display: inline-flex;
-}
-
 @each $prefix, $size in $screens {
     @media screen and (max-width: #{$size}) {
         .#{$prefix}\:none {

@@ -2,6 +2,13 @@
     list-style-type: decimal;
 }
 
+.bullet-list {
+    list-style: disc;
+    li {
+        margin-left: 40px;
+    }
+}
+
 .social-list {
     a {
         display: inline-block;
