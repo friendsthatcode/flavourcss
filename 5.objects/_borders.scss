@@ -38,103 +38,39 @@
 	}
 }
 
-@media screen and (max-width: $large) {
-    .lg\:border-none {
-        border: none;
-    }
-    @each $name, $colour in $theme-colours {
-        .lg\:border {
-    		&-#{$name} {
-    			border: $colour solid 1px;
-    		}
-    	}
-        .lg\:border-left {
-    		&-#{$name} {
-    			border-left: $colour solid 1px;
-    		}
-    	}
-        .lg\:border-right {
-    		&-#{$name} {
-    			border-right: $colour solid 1px;
-    		}
-    	}
-        .lg\:border-top {
-    		&-#{$name} {
-    			border-top: $colour solid 1px;
-    		}
-    	}
-        .lg\:border-bottom {
-    		&-#{$name} {
-    			border-bottom: $colour solid 1px;
-    		}
-    	}
-    }
-}
-
-@media screen and (max-width: $medium) {
-    .md\:border-none {
-        border: none;
-    }
-    @each $name, $colour in $theme-colours {
-        .md\:border {
-    		&-#{$name} {
-    			border: $colour solid 1px;
-    		}
-    	}
-        .md\:border-left {
-    		&-#{$name} {
-    			border-left: $colour solid 1px;
-    		}
-    	}
-        .md\:border-right {
-    		&-#{$name} {
-    			border-right: $colour solid 1px;
-    		}
-    	}
-        .md\:border-top {
-    		&-#{$name} {
-    			border-top: $colour solid 1px;
-    		}
-    	}
-        .md\:border-bottom {
-    		&-#{$name} {
-    			border-bottom: $colour solid 1px;
-    		}
-    	}
-    }
-}
-
-@media screen and (max-width: $small) {
-    .sm\:border-none {
-        border: none;
-    }
-    @each $name, $colour in $theme-colours {
-        .sm\:border {
-    		&-#{$name} {
-    			border: $colour solid 1px;
-    		}
-    	}
-        .sm\:border-left {
-    		&-#{$name} {
-    			border-left: $colour solid 1px;
-    		}
-    	}
-        .sm\:border-right {
-    		&-#{$name} {
-    			border-right: $colour solid 1px;
-    		}
-    	}
-        .sm\:border-top {
-    		&-#{$name} {
-    			border-top: $colour solid 1px;
-    		}
-    	}
-        .sm\:border-bottom {
-    		&-#{$name} {
-    			border-bottom: $colour solid 1px;
-    		}
-    	}
-    }
+@each $prefix, $size in $screens {
+	@media screen and (max-width: #{$size}) {
+		.#{$prefix}\:border-none {
+			border: none;
+		}
+		@each $name, $colour in $theme-colours {
+			.#{$prefix}\:border {
+				&-#{$name} {
+					border: $colour solid 1px;
+				}
+			}
+			.#{$prefix}\:border-left {
+				&-#{$name} {
+					border: $colour solid 1px;
+				}
+			}
+			.#{$prefix}\:border-right {
+				&-#{$name} {
+					border: $colour solid 1px;
+				}
+			}
+			.#{$prefix}\:border-top {
+				&-#{$name} {
+					border: $colour solid 1px;
+				}
+			}
+			.#{$prefix}\:border-bottom{
+				&-#{$name} {
+					border: $colour solid 1px;
+				}
+			}
+		}
+	}
 }
 
 .thick-border {
