@@ -5,6 +5,11 @@
 	margin: 0 auto;
 }
 
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .p {
 	//$s is $key for $sizes map
 	@each $s, $size in $sizes {
@@ -82,11 +87,6 @@
 	}
 }
 
-.mx-auto {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 @each $prefix, $size in $screens {
 	@media screen and (max-width: #{$size}) {
 		.#{$prefix}\:p {
@@ -154,7 +154,6 @@
 }
 
 .align-hack {
-	//$s is $key for $sizes map
 	@each $s, $size in $sizes {
 		&-#{$s} {
 			width: calc(100% + #{$size});
