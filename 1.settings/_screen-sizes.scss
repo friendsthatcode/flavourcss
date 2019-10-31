@@ -1,5 +1,33 @@
-//xlarge screen size dictates size of max container
-$xlarge: 1400px;
-$large: 1350px;
-$medium: 768px;
-$small: 576px;
+/* Define your breakpoints here */
+$breakpoint-4: 480px;
+$breakpoint-7: 768px;
+$breakpoint-12: 1200px;
+$breakpoint-13: 1366px;
+$breakpoint-16: 1600px;
+
+/*
+** Add them to the abbreviations array
+** Two examples of naming conventions are below, feel free to define your own
+*/
+
+$screens: (
+	'bp-4': $breakpoint-4,
+	'bp-7': $breakpoint-7,
+	'bp-12': $breakpoint-12,
+	'bp-13': $breakpoint-13,
+	'bp-16': $breakpoint-16
+);
+
+/*
+$screens: (
+	'xl': $breakpoint-16,
+	'lg': $breakpoint-12,
+	'md': $breakpoint-7,
+	'sm': $breakpoint-4
+);
+*/
+
+/* Set your container size */
+$container: 1400px;
+/* And your container padding (for screens smaller than the container) */
+$containerPadding: 15px;
