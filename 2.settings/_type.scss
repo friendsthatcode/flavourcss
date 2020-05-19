@@ -73,3 +73,8 @@ h5,
     color: $base-font-colour;
     font-weight: 500;
 }
+
+@function rem-calc($size) {
+    $rem: $size / $base-font-size;
+    @return #{$rem}rem;
+}
