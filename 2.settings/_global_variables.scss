@@ -24,21 +24,11 @@ $sizes: (
 	200: 200px
 );
 
-// $sides: ('left', 'right', 'top', 'bottom');
-
 $sides: (
 	'l': 'left',
 	'r': 'right',
 	'b': 'bottom',
 	't': 'top'
-);
-
-
-$screens: (
-	'xl': $xlarge,
-	'lg': $large,
-	'md': $medium,
-	'sm': $small
 );
 
 $vhHeights: (

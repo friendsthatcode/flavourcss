@@ -82,3 +82,14 @@
 .break-word {
 	word-wrap: break-word;
 }
+
+// Font weights
+@for $i from 100 through 800 {
+	@if $i % 100 == 0 {
+		.fw-#{$i}
+		{
+			font-weight: $i;
+
+		}
+	}
+}

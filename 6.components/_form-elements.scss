@@ -46,7 +46,7 @@
         height: 1px;
         overflow: hidden;
         opacity: 0;
-        
+
         &:checked ~ .fake-checkbox,
         &:checked ~ .fake-radio {
             &::after {
@@ -64,7 +64,7 @@
         position: relative;
         cursor: pointer;
         transition: border 0.25s ease-in-out;
-     
+
         &::after {
             content: " ";
             display: inline-block;
@@ -83,45 +83,10 @@
         }
     }
     // Gravity forms specific, but very much a core of the form-wrap toolset
-    .gform_button {
-        float: right;
-    }
     .gform_validation_container {
         display: none;
     }
     .gform_ajax_spinner {
         max-width: 30px;
-    }
-    .gform_button {
-        &.button {
-            width: auto;
-            padding: 0px 40px;
-            font-size: 15px;
-            font-weight: bold;
-            color: $white;
-            background: $colour-font;
-            text-transform: uppercase;
-            font-family: 'proxima-nova';
-            transition: all 0.3s ease;
-            &:hover {
-                background-color: $colour-primary;
-                border-color: $colour-primary;
-            }
-        }
-    }
-    .ginput_recaptcha {
-        display: inline-block !important;
-        float: left;
-    }
-    .gfield {
-        position: relative;
-    }
-    .validation_error {
-        margin-bottom: 20px;
-    }
-    .gfield_error {
-        input {
-            border: 1px solid red;
-        }
     }
 }

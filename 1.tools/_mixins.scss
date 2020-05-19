@@ -36,3 +36,16 @@
     bottom: 0;
   }
 }
+
+@mixin respond-to($screen) {
+  @if map-has-key($screens, $screen) {
+    @media (max-width: #{map-get($screens, $screen)}) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$screen}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
